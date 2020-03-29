@@ -1,0 +1,12 @@
+extends ../layout/index
+block content
+    main.container.mt-5
+        .row
+            .col-md-5
+                img(src=`/img/destinos_${travel.image}_ln.jpg` class="img-fluid")
+            .col-md-7
+                h1 #{travel.title}
+                p Fechas: #{travel.departureDate} - #{travel.returnDate}
+                p Precio: $#{travel.price}
+                p Disponibles: #{travel.disponibility}
+                p #{travel.description}
